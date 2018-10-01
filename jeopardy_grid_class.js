@@ -2,7 +2,7 @@ class jeopardyGrid {
     constructor(options) {
         this.gridArray = []
         this.numberOfRows = options.numberOfRows || 5
-        this.numberOfColumns = options.numberOfColumns || 5
+        this.numberOfColumns = options.numberOfColumns || 6
         this.gridContainer = document.getElementById("main")
         this.elementId = options.elementId
         this.newRows()
@@ -20,7 +20,11 @@ class jeopardyGrid {
             this.gridContainer.appendChild(this.rowElement)
             for (let columnIndex = 0; columnIndex < this.numberOfColumns; columnIndex++) {
                 const cell = new jeopardyCell(rowIndex, columnIndex, this.rowElement)
+                cell.id = "cell" + (String(columnIndex))
+
+                console.log(cell)
                 this.rowArray.push(cell)
+
             }
         }
     }
@@ -34,13 +38,17 @@ class jeopardyCell {
         this.createCell()
     }
     createCell() {
+
+
         this.cell = document.createElement("span")
+        this.cell.innerText = "hello"
         this.rowParent.appendChild(this.cell)
     }
 }
 
-const grid = new jeopardyGrid({
-    numberOfRows: 5,
-    numberOfColumns: 6,
-    parentContainerId: "main",
+
+// const one = new jeopardyCell
+
+const categoryOne = new jeopardyGrid({
+
 })

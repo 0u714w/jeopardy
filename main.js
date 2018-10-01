@@ -7,6 +7,9 @@ function printToPage(words) {
 
 }
 
+let newCell = document.getElementById("cell0")
+console.log(newCell)
+
 
 
 fetch("http://jservice.io/api/category?id=42")
@@ -15,7 +18,9 @@ fetch("http://jservice.io/api/category?id=42")
         let newTitle = data.title
         let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
         let question = randomQuestion.question
+        console.log(question)
         printToPage('The category is ' + newTitle)
+
 
     })
 fetch("http://jservice.io/api/category?id=37")
