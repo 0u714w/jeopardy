@@ -1,4 +1,4 @@
-class Grid {
+class jeopardyGrid {
     constructor(options) {
         this.gridArray = []
         this.numberOfRows = options.numberOfRows || 5
@@ -19,14 +19,14 @@ class Grid {
             this.rowElement.classList.add("newDiv")
             this.gridContainer.appendChild(this.rowElement)
             for (let columnIndex = 0; columnIndex < this.numberOfColumns; columnIndex++) {
-                const cell = new Cell(rowIndex, columnIndex, this.rowElement)
+                const cell = new jeopardyCell(rowIndex, columnIndex, this.rowElement)
                 this.rowArray.push(cell)
             }
         }
     }
 }
 
-class Cell {
+class jeopardyCell {
     constructor(rowIndex, columnIndex, rowParent) {
         this.rowIndex = rowIndex
         this.columnIndex = columnIndex
@@ -39,8 +39,8 @@ class Cell {
     }
 }
 
-const grid = new Grid({
+const grid = new jeopardyGrid({
     numberOfRows: 5,
-    numberOfColumns: 5,
+    numberOfColumns: 6,
     parentContainerId: "main",
 })

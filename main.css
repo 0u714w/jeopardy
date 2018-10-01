@@ -4,8 +4,12 @@
 
 span {
     display: flex;
-    border: 2px solid white;
-    width: 75px;
-    height: 75px;
-    background-image: linear-gradient(aquamarine, yellow);
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#cell-1 {
+    background-color: black;
 }

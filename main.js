@@ -16,5 +16,50 @@ fetch("http://jservice.io/api/category?id=42")
         let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
         let question = randomQuestion.question
         printToPage('The category is ' + newTitle)
-        printToPage(question)
+
+    })
+fetch("http://jservice.io/api/category?id=37")
+    .then(res => res.json())
+    .then(data => {
+        let newTitle = data.title
+        let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
+        let question = randomQuestion.question
+        printToPage('The category is ' + newTitle)
+
+    })
+fetch("http://jservice.io/api/category?id=139")
+    .then(res => res.json())
+    .then(data => {
+        let newTitle = data.title
+        let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
+        let question = randomQuestion.question
+        printToPage('The category is ' + newTitle)
+
+    })
+fetch("http://jservice.io/api/category?id=1079")
+    .then(res => res.json())
+    .then(data => {
+        let newTitle = data.title
+        let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
+        let question = randomQuestion.question
+        printToPage('The category is ' + newTitle)
+
+    })
+fetch("http://jservice.io/api/category?id=777")
+    .then(res => res.json())
+    .then(data => {
+        let newTitle = data.title
+        let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
+        let question = randomQuestion.question
+        printToPage('The category is ' + newTitle)
+
+    })
+fetch("http://jservice.io/api/category?id=539")
+    .then(res => res.json())
+    .then(data => {
+        let newTitle = data.title
+        let randomQuestion = data.clues[Math.floor(Math.random() * data.clues_count)]
+        let question = randomQuestion.question
+        printToPage('The category is ' + newTitle)
+
     })
