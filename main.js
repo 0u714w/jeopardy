@@ -19,6 +19,7 @@ function sportsQuestion() {
             let question = randomQuestion.question
             let value = randomQuestion.value
             let answer = randomQuestion.answer
+            alert(value)
             alert(question)
             prompt("Enter your answer")
             alert("Answer: " + answer)
@@ -39,6 +40,7 @@ function nursuryQuestion() {
             let question = randomQuestion.question
             let value = randomQuestion.value
             let answer = randomQuestion.answer
+            alert(value)
             alert(question)
             prompt("Enter your answer")
             alert("Answer: " + answer)
@@ -57,6 +59,7 @@ function fiveLetterQuestion() {
             let question = randomQuestion.question
             let value = randomQuestion.value
             let answer = randomQuestion.answer
+            alert(value)
             alert(question)
             prompt("Enter your answer")
             alert("Answer: " + answer)
@@ -75,6 +78,7 @@ function aroundTheWorldQuestion() {
             let question = randomQuestion.question
             let value = randomQuestion.value
             let answer = randomQuestion.answer
+            alert(value)
             alert(question)
             prompt("Enter your answer")
             alert("Answer: " + answer)
@@ -93,6 +97,7 @@ function fruitsAndVegetablesQuestion() {
             let question = randomQuestion.question
             let value = randomQuestion.value
             let answer = randomQuestion.answer
+            alert(value)
             alert(question)
             prompt("Enter your answer")
             alert("Answer: " + answer)
@@ -111,6 +116,7 @@ function museumQuestion() {
             let question = randomQuestion.question
             let value = randomQuestion.value
             let answer = randomQuestion.answer
+            alert(value)
             alert(question)
             prompt("Enter your answer")
             alert("Answer: " + answer)
