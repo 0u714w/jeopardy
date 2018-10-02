@@ -21,3 +21,23 @@ p {
     text-align: left;
     color: black;
 }
+
+.row1 {
+    background-image: url("/images/100.png")
+}
+
+.row2 {
+    background-image: url("/images/200.png")
+}
+
+.row3 {
+    background-image: url("/images/300.png")
+}
+
+.row4 {
+    background-image: url("/images/400.png")
+}
+
+.row5 {
+    background-image: url("/images/500.png")
+}

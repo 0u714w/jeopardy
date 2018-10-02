@@ -127,7 +127,7 @@ function museumQuestion() {
 class jeopardyGrid {
     constructor(options) {
         this.gridArray = []
-        this.numberOfRows = options.numberOfRows || 5
+        this.numberOfRows = options.numberOfRows || 6
         this.numberOfColumns = options.numberOfColumns || 6
         this.gridContainer = document.getElementById("main")
         this.elementId = options.elementId
@@ -146,7 +146,9 @@ class jeopardyGrid {
             this.gridContainer.appendChild(this.rowElement)
             for (let columnIndex = 0; columnIndex < this.numberOfColumns; columnIndex++) {
                 const cell = new jeopardyCell(rowIndex, columnIndex, this.rowElement)
+                    // cell.id = "cell" + (String(columnIndex))
                 this.rowArray.push(cell)
+
 
             }
         }
@@ -158,12 +160,14 @@ class jeopardyCell {
         this.rowIndex = rowIndex
         this.columnIndex = columnIndex
         this.rowParent = rowParent
+        this.cellClasses = this.cellClasses
         this.createCell()
     }
     createCell() {
         this.cell = document.createElement("span")
         this.rowParent.appendChild(this.cell)
         this.cell.id = "cell" + (String(this.columnIndex))
+        this.cell.classList.add("row" + (String(this.rowIndex)))
     }
 }
 
